@@ -7,8 +7,8 @@ model = joblib.load("KNN_heart_model.pkl")
 scaler = joblib.load("heart_scaler.pkl")
 expected_columns = joblib.load("heart_columns.pkl")
 
-st.title("Heart Stroke Prediction by Vallabhaneni Chenchaiah")
-st.markdown("Provide the following details to check your heart stroke risk:")
+st.title("Heart Disease Prediction using Machine Learning")
+st.markdown("Enter the patient details to predict heart disease risk:")
 
 # Collect user input
 age = st.slider("Age", 18, 100, 40)
